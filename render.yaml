@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: hackrx-rag-api
+    env: python
+    region: mumbai
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn mainfin:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: API_KEY
+        sync: false
+    autoDeploy: true
