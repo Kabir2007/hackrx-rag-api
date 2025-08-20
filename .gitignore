@@ -1,11 +1,23 @@
-__pycache__/
-*.py[cod]
-.venv/
-.env
-*.log
-*.db
-*.sqlite3
-*.egg-info/
+# Ignore all PDF files
 *.pdf
-.DS_Store
-.ipynb_checkpoints/
+
+# Ignore other notebooks except rag final.ipynb
+down.ipynb
+Rag1.ipynb
+
+# Ignore other directories and files
+6.0.0
+__pycache__/
+
+# Ignore large parts of the virtual environment but keep the essential structure
+bajaj/Lib/site-packages/
+bajaj/Include/
+bajaj/Scripts/__pycache__/
+bajaj/share/
+
+# Keep these files/directories:
+# main.py (included by default)
+# rag final.ipynb (included by default)
+# bajaj/ (virtual environment folder - keeping structure)
+# requirements.txt (included by default)
+# .gitignore (included by default)
